@@ -20,7 +20,7 @@ The components created using this Terraform code are
 
 ### Variables
 
-The `vars.tf` file is used to declare variables to be passed as parameters into the main configuration of your module. Update the values in the `vars.tf` file. You can search for the string `xx-replace-xx` to locate all instances of a variable that need your input.
+The `variables.tf` file is used to declare variables to be passed as parameters into the main configuration of your module. Update the values in the `variables.tf` file. You can search for the string `xx-replace-xx` to locate all instances of a variable that need your input.
 
 `variable "confluent_cloud_api_key" {
   default = `"xx-replace-xx"`
