@@ -1,5 +1,8 @@
-# TODO create the student variables
 confluent_cloud_api_key = "xx-replace-xx"
 confluent_cloud_api_secret = "xx-replace-xx"
+cloud_environment_display_name = "xx-replace-xx"
 confluent_cloud_csp = "xx-replace-xx"
 confluent_cloud_csp_region = "xx-replace-xx"
+confluent_cloud_cluster_display_name = "xx-replace-xx"
+confluent_cloud_cluster_availability = "xx-replace-xx"
+confluent_cloud_stream_governance_package = "xx-replace-xx"

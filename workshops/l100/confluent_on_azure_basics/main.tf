@@ -13,7 +13,7 @@ provider "confluent" {
 }
 
 resource "confluent_environment" "tf-cc-azure" {
-  display_name = "Confluent_Training"
+  display_name = var.confluent_cloud_environment_display_name
 }
 
 # Stream Governance and Kafka clusters can be in different regions as well as different cloud providers,
@@ -43,7 +43,7 @@ resource "confluent_kafka_cluster" "azure-cluster-1" {
   availability = var.confluent_cloud_cluster_availability
   cloud        = var.confluent_cloud_csp
   region       = var.confluent_cloud_csp_region
-  standard {}
+  basic {}
   environment {
     id = confluent_environment.tf-cc-azure.id
   }
