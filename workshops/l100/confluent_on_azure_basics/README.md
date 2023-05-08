@@ -14,18 +14,17 @@ The components created using this Terraform code are
 ### Prerequisites
 
 - Confluent Cloud Subscription
-- Git Bash - https://git-scm.com/downloads
-- Terraform CLI - https://developer.hashicorp.com/terraform/downloads
-- Confluent CLI - https://docs.confluent.io/confluent-cli/current/install.html
+- Git Bash - <https://git-scm.com/downloads>
+- Terraform CLI - <https://developer.hashicorp.com/terraform/downloads>
+- Confluent CLI - <https://docs.confluent.io/confluent-cli/current/install.html>
+
+[//]: # (TODO Rewrite the Variables section to explain the workshop.tfvars file.)
 
 ### Variables
 
-The `variables.tf` file is used to declare variables to be passed as parameters into the main configuration of your module. Update the values in the `variables.tf` file. You can search for the string `xx-replace-xx` to locate all instances of a variable that need your input.
+The `workshop.tfvars` file is used to declare variables to be passed as parameters into the main configuration of your module. Update the values in the `workshop.tfvars` file. You can search for the string `xx-replace-xx` to locate all instances of a variable that need your input.
 
-`variable "confluent_cloud_api_key" {
-  default = `"xx-replace-xx"`
-}`
-
-`variable "confluent_cloud_api_secret" {
- default = `"xx-replace-xx"`
-}`
+``` zsh
+confluent_cloud_csp = "xx-replace-xx"
+confluent_cloud_csp_region = "xx-replace-xx"
+```
