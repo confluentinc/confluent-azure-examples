@@ -14,7 +14,6 @@ The components created using this Terraform code are
 ### Prerequisites
 
 - Confluent Cloud Subscription
-- Git Bash - <https://git-scm.com/downloads>
 - Terraform CLI - <https://developer.hashicorp.com/terraform/downloads>
 - Confluent CLI - <https://docs.confluent.io/confluent-cli/current/install.html>
 
