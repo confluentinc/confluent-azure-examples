@@ -10,10 +10,10 @@ variable "confluent_cloud_api_secret" {
   sensitive   = true
 }
 
-variable "confluent_cloud_environment_display_name" {
-  description = "(Required String) A human-readable name for the Environment. Start and end the name with alphanumeric characters, for example, (Development). The name can contain hyphens and underscores."
+variable "user_email" {
+  description = "Specifies the email address to use for the invitation to become an Environment Administrator"
   type = string
-  default = "Confluent_Azure_Workshop"
+  sensitive = false
 }
 
 variable "confluent_cloud_csp" {
@@ -27,13 +27,9 @@ variable "confluent_cloud_csp_region" {
   type = string
 }
 
-variable "confluent_cloud_cluster_display_name" {
-  description = "(Required String) The name of the Kafka cluster."
-  type = string
-}
-
 variable "confluent_cloud_cluster_availability" {
   description = "Choose your availability model for your cluster (SINGLE_ZONE or MULTI_ZONE)"
+  default = "SINGLE_ZONE"
 }
 
 variable "confluent_cloud_stream_governance_package" {
